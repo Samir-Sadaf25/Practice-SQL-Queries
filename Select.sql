@@ -73,3 +73,13 @@ SELECT * FROM students WHERE course = 'Math'  or course = 'History';
 SELECT * from students where age BETWEEN 20 and 23;
 
 SELECT * from students where first_name ILIKE 's%';
+
+-- pagination limit offset
+select * from students LIMIT 5 OFFSET 5 * 0; -- if i want to show 5 data of each page
+SELECT * from students LIMIT 5 OFFSET 5 * 1; -- second page 6 to 10 
+SELECT * from students LIMIT 5 OFFSET 5 * 2; -- third page 11 to 15 
+
+DELETE from students WHERE grade = 'C' and country = 'USA';
+UPDATE  students
+set email = 'default@example.com', country = 'Iran', course = 'IT'
+WHERE first_name = 'Elena';
