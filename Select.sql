@@ -24,6 +24,8 @@ INSERT INTO students (first_name, last_name, age, course, grade, blood_group, em
 ('Fatima', 'Ali', 19, 'CS', 'A', 'AB-', 'fatima.ali@example.com', '2007-08-27', 'Bangladesh'),
 ('Jonas', 'Müller', 21, 'History', 'C+', 'A+', 'jonas.m@example.com', '2005-02-11', 'Germany');
 
+INSERT INTO students (first_name, last_name, age, course, grade, blood_group, email, dob, country) VALUES ('Borshon', 'roy', 26, 'EEE', 'A', 'O+', 'Borshon.roy@example.com', '2003-07-16', 'Bangladesh');
+
 SELECT first_name,last_name,email FROM students;
 SELECT * FROM students where age > 21;
 SELECT * from students WHERE country IN('USA','Canada');
